@@ -18,7 +18,8 @@
 <link rel="stylesheet" href="css/theme/white.css" id="theme">
 
 <!-- Code syntax highlighting -->
-<link rel="stylesheet" href="lib/css/zenburn.css">
+<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+<link rel="stylesheet" href="lib/css/idea.css">
 
 <!-- Printing and PDF exports -->
 <script>
@@ -30,11 +31,6 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 </script>
 
 <!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]-->
-<style>
-.reveal pre code {
-  background: black;
-}
-</style>
 </head>
 
 <body>
@@ -207,11 +203,13 @@ ROLLBACK;
 
     <section>
       <h3>Logic in DB</h3>
+      <hr/>
       <img src="bajan.jpg"/>
     </section>
 
     <section>
       <h3>Logic in DB: PRO</h3>
+      <hr/>
       <ul>
         <li>Performance (faster transactions, data locality)</li>
         <li>Consistency (like incapsulation)</li>
@@ -256,6 +254,7 @@ ROLLBACK;
 
     <section>
       <h3>pg: extensions</h3>
+      <hr/>
       <pre><code class="sql">
   -- PostGIS: a spatial database extender
   SELECT superhero.name
@@ -269,6 +268,7 @@ ROLLBACK;
 
     <section>
       <h3>pg: custom types</h3>
+      <hr/>
       <pre><code class="sql">
   CREATE TYPE address AS (city text, street text);
 
@@ -285,6 +285,7 @@ ROLLBACK;
 
     <section>
       <h3>pg: indexes</h3>
+      <hr/>
       <pre><code class="sql">
 -- GIN Index
 CREATE EXTENSION IF NOT EXISTS pg_trgm;
@@ -298,6 +299,7 @@ SELECT count(*) FROM users where first_name ilike '%aeb%';
 
     <section>
       <h3>pg: languages</h3>
+      <hr/>
       <pre><code class="sql">
 CREATE LANGUAGE plpython;
 CREATE FUNCTION pymax (a integer, b integer)
@@ -313,6 +315,7 @@ $$ LANGUAGE plpythonu;
 
     <section>
       <h3>pg: FDW</h3>
+      <hr/>
       <pre><code class="sql">
 CREATE EXTENSION file_fdw;
 CREATE SERVER data FOREIGN DATA WRAPPER file_fdw;
@@ -421,6 +424,13 @@ CREATE TRIGGER test_trigger
   plan.free();
 
   return sum;
+      </code></pre>
+      <br/>
+    </section>
+
+    <section>
+      <h3>plv8: performance</h3>
+      <pre><code class="js">
       </code></pre>
       <br/>
     </section>

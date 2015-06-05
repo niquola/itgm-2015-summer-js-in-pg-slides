@@ -1,0 +1,129 @@
+/*
+
+Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.reveal pre {
+  box-shadow: none;
+  border: 1px solid #777;
+}
+.reveal pre code {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #000;
+  background: #fff;
+  -webkit-text-size-adjust: none;
+}
+
+.reveal pre .subst,
+.reveal pre .title,
+.reveal pre .json .value {
+  font-weight: normal;
+  color: #000;
+}
+
+.reveal pre .comment,
+.reveal pre .javadoc,
+.reveal pre .diff .header {
+  color: #808080;
+  font-style: italic;
+}
+
+.reveal pre .annotation,
+.reveal pre .decorator,
+.reveal pre .preprocessor,
+.reveal pre .pragma,
+.reveal pre .doctype,
+.reveal pre .pi,
+.reveal pre .chunk,
+.reveal pre .shebang,
+.reveal pre .apache .cbracket,
+.reveal pre .prompt,
+.reveal pre .http .title {
+  color: #808000;
+}
+
+.reveal pre .tag,
+.reveal pre .pi {
+  background: #efefef;
+}
+
+.reveal pre .tag .title,
+.reveal pre .id,
+.reveal pre .attr_selector,
+.reveal pre .pseudo,
+.reveal pre .literal,
+.reveal pre .keyword,
+.reveal pre .hexcolor,
+.reveal pre .css .function,
+.reveal pre .ini .title,
+.reveal pre .css .class,
+.reveal pre .list .keyword,
+.reveal pre .nginx .title,
+.reveal pre .tex .command,
+.reveal pre .request,
+.reveal pre .status {
+  font-weight: bold;
+  color: #000080;
+}
+
+.reveal pre .attribute,
+.reveal pre .rules .keyword,
+.reveal pre .number,
+.reveal pre .date,
+.reveal pre .regexp,
+.reveal pre .tex .special {
+  font-weight: bold;
+  color: #0000ff;
+}
+
+.reveal pre .number,
+.reveal pre .regexp {
+  font-weight: normal;
+}
+
+.reveal pre .string,
+.reveal pre .value,
+.reveal pre .filter .argument,
+.reveal pre .css .function .params,
+.reveal pre .apache .tag {
+  color: #008000;
+  font-weight: bold;
+}
+
+.reveal pre .symbol,
+.reveal pre .ruby .symbol .string,
+.reveal pre .char,
+.reveal pre .tex .formula {
+  color: #000;
+  background: #d0eded;
+  font-style: italic;
+}
+
+.reveal pre .phpdoc,
+.reveal pre .dartdoc,
+.reveal pre .yardoctag,
+.reveal pre .javadoctag {
+  text-decoration: underline;
+}
+
+.reveal pre .variable,
+.reveal pre .envvar,
+.reveal pre .apache .sqbracket,
+.reveal pre .nginx .built_in {
+  color: #660e7a;
+}
+
+.reveal pre .addition {
+  background: #baeeba;
+}
+
+.reveal pre .deletion {
+  background: #ffc8bd;
+}
+
+.reveal pre .diff .change {
+  background: #bccff9;
+}
